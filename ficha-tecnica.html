@@ -33,9 +33,18 @@
             page-break-after: always; overflow: hidden; position: relative; background: white; box-shadow: 0 15px 35px rgba(0,0,0,0.2); margin-bottom: 30px; border-radius: 5px;
         }
 
-        .pdf-export-mode, .pdf-export-mode body { padding: 0 !important; margin: 0 !important; align-items: flex-start !important; justify-content: flex-start !important; background: white !important; }
-        .pdf-export-mode #export-container { width: 210mm !important; margin: 0 !important; padding: 0 !important; }
-        .pdf-export-mode .page { width: 210mm !important; height: 297mm !important; margin: 0 !important; padding: 20mm !important; border-radius: 0 !important; box-shadow: none !important; page-break-after: always !important; }
+        /* ----- RESTAURE EXACTLY AS FIRST VERSION WITH SAFE CENTERING FIX ----- */
+        .pdf-export-mode body { padding: 0 !important; margin: 0 !important; align-items: flex-start !important; justify-content: flex-start !important; background: white !important; }
+        .pdf-export-mode #export-container { width: 210mm !important; margin: 0 !important; }
+        .pdf-export-mode .page { 
+            width: 210mm !important; 
+            height: 295mm !important; 
+            margin: 0 !important; 
+            border-radius: 0 !important; 
+            box-shadow: none !important; 
+            page-break-after: always !important; 
+            /* DO NOT FORCE PADDING HERE, IT BREAKS BOX-SIZING FOR HTML2CANVAS */ 
+        }
 
         .content-center { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
 
@@ -62,7 +71,7 @@
             .page { margin-bottom: 0; border-radius: 0; box-shadow: none; height: 100vh !important; }
         }
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 900px) {
             body { padding: 10px; }
             .nav-ui { max-width: 100%; flex-direction: column; }
             .btn-black, .btn-gold { width: 100%; }
@@ -192,7 +201,6 @@
             allImages = propertyConfig.multimedia.imagesList;
         }
         
-        // Take the 8 best images for the brochure.
         const galleryImages = allImages.slice(0, 8);
         
         galleryImages.slice(0, 4).forEach(src => {
@@ -213,10 +221,9 @@
             const btn = document.querySelector('.btn-gold');
             btn.innerText = 'GENERANDO PDF...';
             
+            // Ocultar la barra superior para capturar únicamente el documento
+            document.querySelector('.nav-ui').style.display = 'none';
             document.body.classList.add('pdf-export-mode');
-
-            // Ocultar botón durante la captura para evitar saltos de DOM
-            btn.style.display = 'none';
 
             setTimeout(() => {
                 const opt = {
@@ -236,13 +243,13 @@
                 };
                 
                 html2pdf().set(opt).from(element).save().then(() => { 
-                    btn.style.display = 'flex';
                     btn.innerText = 'DESCARGAR EN PDF'; 
+                    document.querySelector('.nav-ui').style.display = 'flex';
                     document.body.classList.remove('pdf-export-mode');
                 }).catch(err => {
                     console.error("Error al generar PDF:", err);
-                    btn.style.display = 'flex';
                     btn.innerText = 'ERROR, REINTENTAR';
+                    document.querySelector('.nav-ui').style.display = 'flex';
                     document.body.classList.remove('pdf-export-mode');
                 });
             }, 300);
