@@ -62,7 +62,7 @@
             .page { margin-bottom: 0; border-radius: 0; box-shadow: none; height: 100vh !important; }
         }
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 700px) {
             body { padding: 10px; }
             .nav-ui { max-width: 100%; flex-direction: column; }
             .btn-black, .btn-gold { width: 100%; }
@@ -229,7 +229,7 @@
                         letterRendering: true,
                         scrollY: 0,
                         scrollX: 0,
-                        windowWidth: 794 // 210mm en pixeles exactos (A4)
+                        windowWidth: 1200 
                     },
                     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
                     pagebreak: { mode: ['css', 'legacy'] }
