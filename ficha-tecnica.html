@@ -33,8 +33,9 @@
             page-break-after: always; overflow: hidden; position: relative; background: white; box-shadow: 0 15px 35px rgba(0,0,0,0.2); margin-bottom: 30px; border-radius: 5px;
         }
 
-        .pdf-export-mode #export-container { width: 210mm !important; }
-        .pdf-export-mode .page { width: 210mm !important; height: 295mm !important; margin: 0 !important; border-radius: 0 !important; box-shadow: none !important; page-break-after: always !important; }
+        .pdf-export-mode, .pdf-export-mode body { padding: 0 !important; margin: 0 !important; align-items: flex-start !important; justify-content: flex-start !important; background: white !important; }
+        .pdf-export-mode #export-container { width: 210mm !important; margin: 0 !important; padding: 0 !important; }
+        .pdf-export-mode .page { width: 210mm !important; height: 297mm !important; margin: 0 !important; padding: 20mm !important; border-radius: 0 !important; box-shadow: none !important; page-break-after: always !important; }
 
         .content-center { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
 
@@ -214,6 +215,9 @@
             
             document.body.classList.add('pdf-export-mode');
 
+            // Ocultar botón durante la captura para evitar saltos de DOM
+            btn.style.display = 'none';
+
             setTimeout(() => {
                 const opt = {
                     margin: 0, 
@@ -224,21 +228,24 @@
                         useCORS: true, 
                         letterRendering: true,
                         scrollY: 0,
-                        windowWidth: 1200 
+                        scrollX: 0,
+                        windowWidth: 794 // 210mm en pixeles exactos (A4)
                     },
                     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
                     pagebreak: { mode: ['css', 'legacy'] }
                 };
                 
                 html2pdf().set(opt).from(element).save().then(() => { 
+                    btn.style.display = 'flex';
                     btn.innerText = 'DESCARGAR EN PDF'; 
                     document.body.classList.remove('pdf-export-mode');
                 }).catch(err => {
                     console.error("Error al generar PDF:", err);
+                    btn.style.display = 'flex';
                     btn.innerText = 'ERROR, REINTENTAR';
                     document.body.classList.remove('pdf-export-mode');
                 });
-            }, 100);
+            }, 300);
         }
     </script>
 </body>
