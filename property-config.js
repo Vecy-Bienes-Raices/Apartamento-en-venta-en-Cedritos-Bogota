@@ -14,7 +14,7 @@ const propertyConfig = {
     keywords: "Venta Apartamento Cedritos, Inmobiliaria Bogotá, Apartamento Cedritos, Venta Inmuebles Norte Bogotá, Vecy Bienes Raíces",
     propertyId: "ID-BOG-CE01",
     ogUrl: "https://apto-cedritos-bogota.netlify.app/",
-    ogImage: "assets/portada.png",
+    ogImage: "assets/3.jpeg",
     author: "Vecy Bienes Raíces",
     copyright: "2026"
   },
@@ -93,7 +93,7 @@ const propertyConfig = {
   // 8. Multimedia (Fotos y Video)
   multimedia: {
     videoUrl: "assets/ap-ceditos-bog.mp4",
-    videoThumbnail: "assets/portada.png",
+    videoThumbnail: "assets/3.jpeg",
     imagesCount: 14,
     imagePrefix: "assets/",
     imageExtension: ".jpeg",
