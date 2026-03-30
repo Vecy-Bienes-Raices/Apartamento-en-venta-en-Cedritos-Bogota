@@ -9,9 +9,9 @@
 const propertyConfig = {
   // 1. SEO (Para Google y compartir en redes)
   seo: {
-    title: "Apartamento en Venta Cedritos Bogotá - 83m² | Oportunidad",
-    description: "Venta Apartamento Cedritos Bogotá. 83m², 3 Habitaciones, Estudio, 4to Piso, excelente ubicación cerca a la Autopista Norte. Precio: $480 Millones. Ideal inversión o vivienda.",
-    keywords: "Venta Apartamento Cedritos, Inmobiliaria Bogotá, Apartamento Cedritos, Venta Inmuebles Norte Bogotá, Vecy Bienes Raíces",
+    title: "Venta de Apartamento Amplio en Cedritos, Usaquén | 83m² | Gran Potencial para Remodelar",
+    description: "¿Buscas apartamento en Cedritos, Bogotá? Amplio inmueble de 83m², 3 habitaciones, 2 baños y estudio. Excelente ubicación cerca a Transmilenio. ¡Agenda tu visita!",
+    keywords: "VentaApartamentosBogota, ApartamentoEnCedritos, InmobiliariaBogota, BienesRaicesColombia, Usaquen, InversionInmobiliaria, VecyBienesRaices, Remodelacion, ViviendaNorteBogota",
     propertyId: "ID-BOG-CE01",
     ogUrl: "https://ap-cedritos-bog-ce01.netlify.app/",
     ogImage: "assets/3.jpeg",
@@ -22,7 +22,7 @@ const propertyConfig = {
   // 2. Encabezado Principal
   infoPrincipal: {
     headerBadge: "🚀 ¡Ubicación Privilegiada en Cedritos! 🏢",
-    tituloHtml: "Clásico Apartamento en Cedritos",
+    tituloHtml: "Amplio Apartamento en Cedritos, Usaquén",
     precioVenta: "$480.000.000",
     valorAdmin: "$361.000 (Pronto pago)",
     labelExtra: "✨ Estrato 4"
@@ -73,10 +73,11 @@ const propertyConfig = {
     titulo: "💖 Tu Próximo Hogar o Inversión",
     texto: `
     <div class="roi-item">
-      <p>Te presentamos este amplio y clásico apartamento en venta ubicado en el estratégico sector de Cedritos, localidad de Usaquén. Con 83 m² privados y una excelente distribución, es el momento ideal de salir de lo bueno y venir por lo mejor.</p>
+      <p>Te presentamos este amplio y clásico apartamento en venta ubicado en el estratégico sector de Cedritos, localidad de Usaquén. Con un área privada de 83 m² y una excelente distribución, este inmueble representa un lienzo en blanco con un increíble potencial para ser remodelado a tu gusto y necesidades.</p>
       <ul class="roi-list">
-        <li>✨ Lideramos con tecnología para que encuentres la propiedad ideal.</li>
-        <li>✨ Construcción clásica y robusta con excelente potencial de remodelación.</li>
+        <li>✨ <strong>Construcción clásica y robusta:</strong> Ascensor, vigilancia 24/7 y administración económica.</li>
+        <li>✨ <strong>Zonas de servicio:</strong> Cocina independiente y cuarto de servicio versátil.</li>
+        <li>✨ Lideramos con tecnología para que encuentres la propiedad ideal. Sal de lo bueno y ven por lo mejor.</li>
       </ul>
       <div class="projection">
         ¡Contáctanos hoy mismo para agendar un recorrido virtual o presencial!
@@ -125,6 +126,8 @@ const propertyConfig = {
 📍 *Ubicación:* Cedritos, Bogotá
 
 🔗 *Ver Fotos y Detalles:*
-https://ap-cedritos-bog-ce01.netlify.app/`
+https://ap-cedritos-bog-ce01.netlify.app/
+
+#VentaApartamentosBogota #ApartamentoEnCedritos #InmobiliariaBogota #BienesRaicesColombia #Usaquen #InversionInmobiliaria #VecyBienesRaices #Remodelacion #ViviendaNorteBogota`
   }
 };
