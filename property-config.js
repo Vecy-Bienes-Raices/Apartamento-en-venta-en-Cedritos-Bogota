@@ -13,7 +13,7 @@ const propertyConfig = {
     description: "Venta Apartamento Cedritos Bogotá. 83m², 3 Habitaciones, Estudio, 4to Piso, excelente ubicación cerca a la Autopista Norte. Precio: $480 Millones. Ideal inversión o vivienda.",
     keywords: "Venta Apartamento Cedritos, Inmobiliaria Bogotá, Apartamento Cedritos, Venta Inmuebles Norte Bogotá, Vecy Bienes Raíces",
     propertyId: "ID-BOG-CE01",
-    ogUrl: "https://apto-cedritos-bogota.netlify.app/",
+    ogUrl: "https://ap-cedritos-bog-ce01.netlify.app/",
     ogImage: "assets/3.jpeg",
     author: "Vecy Bienes Raíces",
     copyright: "2026"
@@ -125,6 +125,6 @@ const propertyConfig = {
 📍 *Ubicación:* Cedritos, Bogotá
 
 🔗 *Ver Fotos y Detalles:*
-https://apto-cedritos-bogota.netlify.app/`
+https://ap-cedritos-bog-ce01.netlify.app/`
   }
 };
