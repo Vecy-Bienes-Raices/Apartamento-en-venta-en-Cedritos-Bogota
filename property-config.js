@@ -31,13 +31,14 @@ const propertyConfig = {
   // 3. Rejilla de Detalles (Iconos y Datos Clave)
   detalles: [
     { label: "Área Const.", value: "83 m²", icon: "📐" },
+    { label: "Área Privada", value: "82.98 m²", icon: "🏠" },
     { label: "Habitaciones", value: "3 + Estudio", icon: "🛏️" },
     { label: "Baños", value: "2", icon: "🚿" },
     { label: "Parqueaderos", value: "1", icon: "🚗" },
     { label: "Antigüedad", value: "31 años", icon: "🏗️" },
     { label: "Cuarto Servicio", value: "Sí (o depósito)", icon: "🧺" },
     { label: "Estrato", value: "4", icon: "✨" },
-    { label: "Ubicación", value: "Barrio Cedritos, Usaquén", icon: "📍" }
+    { label: "Piso", value: "4", icon: "🏢" }
   ],
 
   // 4. Características Internas (Lista izquierda)
