@@ -85,7 +85,7 @@ const propertyConfig = {
       <br>
       <div style="text-align: center;">
          <a href="ficha-tecnica.html" class="btn-analisis">
-            📋 VER MÁS DETALLES DEL APARTAMENTO
+            📋 VER MÁS DETALLES
          </a>
       </div>
     </div>`

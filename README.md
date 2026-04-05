@@ -1,33 +1,32 @@
-# 🏢 Ficha Técnica - Edificio en San Luis, Teusaquillo
+# 🏠 Ficha Técnica - Apartamento con Potencial | Cedritos, Usaquén, Bogotá
 
-Este proyecto contiene la ficha técnica digital para la venta del Edificio ubicado en el barrio San Luis, Teusaquillo, Bogotá.
+Este proyecto contiene la ficha técnica digital para la venta del apartamento ubicado en Cedritos, localidad de Usaquén, norte de Bogotá.
 
-**🔗 Ver Ficha en Vivo:** [https://edificio-teusaquillo-bogota.netlify.app/](https://edificio-teusaquillo-bogota.netlify.app/)
+**🔗 Ver Ficha en Vivo:** [https://ap-cedritos-bog-ce01.netlify.app/](https://ap-cedritos-bog-ce01.netlify.app/)
 
-## 📋 Detalles del Proyecto
+## Descripción del Inmueble
 
-Ficha técnica moderna, responsiva y diseñada para enamorar a inversionistas.
+- **Tipo:** Apartamento para remodelar
+- **Ubicación:** Cedritos, Usaquén, Norte de Bogotá
+- **Área construida:** 83 m²
+- **Habitaciones:** 3 + Estudio/Biblioteca
+- **Baños:** 2
+- **Parqueadero:** 1
+- **Cuarto de servicio:** Sí (o depósito)
+- **Estrato:** 4
+- **Precio:** $480.000.000
 
-- **Diseño:** Minimalista, colores tierra/dorado.
-- **Tecnología:** HTML5, CSS3 (Glassmorphism), JavaScript (Configuración dinámica).
-- **Optimización:** Carga rápida de imágenes, SEO optimizado para redes sociales.
+## Reference ID
 
-## 🛠 Estructura de Archivos
+`ID-BOG-CE01`
 
-- `index.html`: Estructura principal de la página.
-- `property-config.js`: **Configuración de datos.** Contiene toda la información del inmueble, precios, textos y multimedia.
-- `assets/`: Carpeta con las fotografías y video del inmueble.
+## Stack Técnico
 
-## 🚀 Despliegue
+- HTML5 + CSS3 (Glassmorphism)
+- JavaScript Vanilla (lazy loading, carrusel, lightbox, share modal)
+- `property-config.js` — fuente de datos centralizada
+- Deploy: Netlify (rama `main`)
 
-Este proyecto está configurado para desplegarse automáticamente en **Netlify** o **GitHub Pages**.
+## Autor
 
-Para actualizar la información:
-
-1. Edita `property-config.js`.
-2. Haz commit y push al repositorio.
-3. Los cambios se reflejarán en pocos minutos.
-
----
-
-### Ficha Técnica Digital Inmobiliaria
+**Vecy Bienes Raíces** — El Bróker Virtual e IA #1 de Colombia.
